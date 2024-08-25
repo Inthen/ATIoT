@@ -776,8 +776,6 @@ def createTreePDF(output_file_name, tree_graph, tree_description, session_id, pd
         pdffile.ln(5)
 
     pdffile.output(output_file_name, "F")
-    # pdf.output('temp/session'+str(session_id)+'/session'+str(session_id)+'.pdf', 'F')
-
 
 """
 [Summary]: Method to create the tree and the descriptions of each node.
@@ -1625,6 +1623,3 @@ while True:
 
     value = {i for i in attacks_dict if attacks_dict[i] == 1}
     print(*value, sep='\n')
-
-# with open('tree.txt', 'w') as sys.stdout:
-#    visit_text_tree([], phys_tampering_nodes, 0)
